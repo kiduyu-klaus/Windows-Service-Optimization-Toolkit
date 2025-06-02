@@ -61,48 +61,55 @@ if ($confirmation -ne 'Y') {
 
 # Process services
 function Optimize-Services {
+
     param(
-        [string[]]$services,
-        [string]$action,
-        [string]$startupType
+        [string[]]$services,      # Array of service names to process
+        [string]$action,          # Action to perform (e.g., "DISABLE", "MANUAL")
+        [string]$startupType      # Startup type to set (e.g., "Disabled", "Manual")
     )
+
     foreach ($serviceName in $services) {
         try {
-            # Handle wildcards
-            if ($serviceName -like "*`**") {
-                $pattern = $serviceName.TrimEnd('*')
-                $matchedServices = Get-Service | Where-Object { $_.Name -like "$pattern*" }
+            # Handle wildcards - look for services that match wildcard patterns
+            if ($serviceName -like "*`*") {
+                $pattern = $serviceName.TrimEnd('*')   # Remove trailing asterisks for pattern matching
+                $matchedServices = Get-Service | Where-Object { $_.Name -like "$pattern*" }  # Get services matching the pattern
+
                 if (-not $matchedServices) {
                     Log-Message "[SKIPPED] No services match pattern: $serviceName"
-                    continue
+                    continue  # Skip to the next service
                 }
-            }
-            else {
+            } else {
+                # Try to get the service by exact name
                 $matchedServices = @(Get-Service -Name $serviceName -ErrorAction SilentlyContinue)
+
                 if (-not $matchedServices) {
                     Log-Message "[SKIPPED] Service not found: $serviceName"
-                    continue
+                    continue  # Skip to the next service
                 }
             }
 
             foreach ($service in $matchedServices) {
-                # Skip protected services
+                # Skip protected services that are critical for system stability
                 if ($service.Name -in @("CryptSvc", "DcomLaunch", "Dhcp", "Dnscache", "LanmanServer", "LSM")) {
                     Log-Message "[PROTECTED] Skipping critical service: $($service.Name)"
-                    continue
+                    continue  # Skip to the next matched service
                 }
-                # Stop if running
+
+                # Stop the service if it is currently running
                 if ($service.Status -ne 'Stopped') {
                     Stop-Service -Name $service.Name -Force -ErrorAction Stop
                     Log-Message "[STOPPED] $($service.Name) ($($service.DisplayName))"
                 }
-                # Change startup type
+
+                # Change the service's startup type based on the provided parameter
                 Set-Service -Name $service.Name -StartupType $startupType -ErrorAction Stop
                 Log-Message "[$action] $($service.Name) → $startupType"
             }
-        } catch {
-            Log-Message "[ERROR] Failed to process ${serviceName}: $($_.Exception.Message)"
 
+        } catch {
+            # Log errors encountered while processing the service
+            Log-Message "[ERROR] Failed to process ${serviceName}: $($_.Exception.Message)"
         }
     }
 }
