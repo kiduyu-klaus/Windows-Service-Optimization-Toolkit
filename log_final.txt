@@ -1,0 +1,132 @@
+2025-06-02 03:02:39 - === SERVICE OPTIMIZATION STARTED ===
+2025-06-02 03:02:42 - System: DESKTOP-IA0L5FR
+2025-06-02 03:03:11 - OS: Microsoft Windows 10 Enterprise LTSC
+2025-06-02 03:03:18 - 
+=== DISABLING NON-ESSENTIAL SERVICES ===
+2025-06-02 03:03:20 - [DISABLE] bdredline_agent → Disabled
+2025-06-02 03:03:20 - [DISABLE] bdvpnservice → Disabled
+2025-06-02 03:03:21 - [DISABLE] CCleanerPerformanceOptimizerService → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleChromeElevationService → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleUpdaterInternalService135.0.7023.5 → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleUpdaterInternalService137.0.7115.0 → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleUpdaterInternalService138.0.7156.2 → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleUpdaterInternalService138.0.7194.0 → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleUpdaterService135.0.7023.5 → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleUpdaterService137.0.7115.0 → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleUpdaterService138.0.7156.2 → Disabled
+2025-06-02 03:03:21 - [DISABLE] GoogleUpdaterService138.0.7194.0 → Disabled
+2025-06-02 03:03:21 - [DISABLE] IObitUnSvr → Disabled
+2025-06-02 03:03:21 - [DISABLE] PlexUpdateService → Disabled
+2025-06-02 03:03:21 - [DISABLE] VBoxSDS → Disabled
+2025-06-02 03:03:22 - [DISABLE] WindscribeService → Disabled
+2025-06-02 03:03:22 - [DISABLE] AJRouter → Disabled
+2025-06-02 03:03:22 - [DISABLE] ALG → Disabled
+2025-06-02 03:03:22 - [DISABLE] autotimesvc → Disabled
+2025-06-02 03:03:23 - [DISABLE] bthserv → Disabled
+2025-06-02 03:03:24 - [DISABLE] CDPSvc → Disabled
+2025-06-02 03:03:28 - [STOPPED] CDPUserSvc_64bf9 (Connected Devices Platform User Service_64bf9)
+2025-06-02 03:03:30 - [ERROR] Failed to process CDPUserSvc_64bf9: Service 'Connected Devices Platform User Service_64bf9 (CDPUserSvc_64bf9)' cannot be configured due to the following error: The parameter is incorrect
+2025-06-02 03:03:30 - [DISABLE] diagsvc → Disabled
+2025-06-02 03:03:30 - [SKIPPED] No services match pattern: Fax
+2025-06-02 03:03:30 - [DISABLE] MapsBroker → Disabled
+2025-06-02 03:03:30 - [DISABLE] RemoteRegistry → Disabled
+2025-06-02 03:03:36 - [STOPPED] WaaSMedicSvc (Windows Update Medic Service)
+2025-06-02 03:03:36 - [ERROR] Failed to process WaaSMedicSvc: Service 'Windows Update Medic Service (WaaSMedicSvc)' cannot be configured due to the following error: Access is denied
+2025-06-02 03:03:36 - [DISABLE] SDRSVC → Disabled
+2025-06-02 03:03:36 - [SKIPPED] No services match pattern: WpcMonSvc
+2025-06-02 03:03:36 - [SKIPPED] No services match pattern: XblAuthManager
+2025-06-02 03:03:36 - [SKIPPED] No services match pattern: XblGameSave
+2025-06-02 03:03:36 - 
+=== SETTING SERVICES TO MANUAL START ===
+2025-06-02 03:03:36 - [MANUAL] CyberGhost8Service → Manual
+2025-06-02 03:03:36 - [MANUAL] Spooler → Manual
+2025-06-02 03:03:36 - [MANUAL] WerSvc → Manual
+2025-06-02 03:03:36 - [ERROR] Failed to process WinDefend: Service 'Microsoft Defender Antivirus Service (WinDefend)' cannot be stopped due to the following error: Cannot open WinDefend service on computer '.'.
+2025-06-02 03:09:59 - === SERVICE OPTIMIZATION STARTED ===
+2025-06-02 03:10:00 - System: DESKTOP-IA0L5FR
+2025-06-02 03:10:01 - OS: Microsoft Windows 10 Enterprise LTSC
+2025-06-02 03:10:08 - Aborted by user.
+2025-06-02 03:10:14 - === SERVICE OPTIMIZATION STARTED ===
+2025-06-02 03:10:14 - System: DESKTOP-IA0L5FR
+2025-06-02 03:10:14 - OS: Microsoft Windows 10 Enterprise LTSC
+2025-06-02 03:10:18 - 
+=== DISABLING NON-ESSENTIAL SERVICES ===
+2025-06-02 03:10:18 - [DISABLE] bdredline_agent → Disabled
+2025-06-02 03:10:18 - [DISABLE] bdvpnservice → Disabled
+2025-06-02 03:10:18 - [DISABLE] CCleanerPerformanceOptimizerService → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleChromeElevationService → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleUpdaterInternalService135.0.7023.5 → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleUpdaterInternalService137.0.7115.0 → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleUpdaterInternalService138.0.7156.2 → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleUpdaterInternalService138.0.7194.0 → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleUpdaterService135.0.7023.5 → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleUpdaterService137.0.7115.0 → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleUpdaterService138.0.7156.2 → Disabled
+2025-06-02 03:10:18 - [DISABLE] GoogleUpdaterService138.0.7194.0 → Disabled
+2025-06-02 03:10:18 - [DISABLE] IObitUnSvr → Disabled
+2025-06-02 03:10:18 - [DISABLE] PlexUpdateService → Disabled
+2025-06-02 03:10:18 - [DISABLE] VBoxSDS → Disabled
+2025-06-02 03:10:18 - [DISABLE] WindscribeService → Disabled
+2025-06-02 03:10:18 - [DISABLE] AJRouter → Disabled
+2025-06-02 03:10:19 - [DISABLE] ALG → Disabled
+2025-06-02 03:10:19 - [DISABLE] autotimesvc → Disabled
+2025-06-02 03:10:19 - [DISABLE] bthserv → Disabled
+2025-06-02 03:10:19 - [DISABLE] CDPSvc → Disabled
+2025-06-02 03:10:19 - [ERROR] Failed to process CDPUserSvc_64bf9: Service 'Connected Devices Platform User Service_64bf9 (CDPUserSvc_64bf9)' cannot be configured due to the following error: The parameter is incorrect
+2025-06-02 03:10:19 - [DISABLE] diagsvc → Disabled
+2025-06-02 03:10:19 - [SKIPPED] No services match pattern: Fax
+2025-06-02 03:10:19 - [DISABLE] MapsBroker → Disabled
+2025-06-02 03:10:19 - [DISABLE] RemoteRegistry → Disabled
+2025-06-02 03:10:19 - [ERROR] Failed to process WaaSMedicSvc: Service 'Windows Update Medic Service (WaaSMedicSvc)' cannot be configured due to the following error: Access is denied
+2025-06-02 03:10:19 - [DISABLE] SDRSVC → Disabled
+2025-06-02 03:10:19 - [SKIPPED] No services match pattern: WpcMonSvc
+2025-06-02 03:10:20 - [SKIPPED] No services match pattern: XblAuthManager
+2025-06-02 03:10:20 - [SKIPPED] No services match pattern: XblGameSave
+2025-06-02 03:10:20 - 
+=== SETTING SERVICES TO MANUAL START ===
+2025-06-02 03:10:20 - [MANUAL] CyberGhost8Service → Manual
+2025-06-02 03:10:20 - [MANUAL] Spooler → Manual
+2025-06-02 03:10:20 - [MANUAL] WerSvc → Manual
+2025-06-02 03:10:20 - [MANUAL] BITS → Manual
+2025-06-02 03:10:20 - [ERROR] Failed to process ClipSVC: Service 'Client License Service (ClipSVC) (ClipSVC)' cannot be configured due to the following error: Access is denied
+2025-06-02 03:10:22 - [STOPPED] DusmSvc (Data Usage)
+2025-06-02 03:10:22 - [MANUAL] DusmSvc → Manual
+2025-06-02 03:10:22 - [MANUAL] lfsvc → Manual
+2025-06-02 03:10:22 - 
+=== OPTIMIZATION COMPLETE ===
+2025-06-02 03:10:22 - Log saved to: .\log_final.txt
+2025-06-02 03:20:44 - === SERVICE OPTIMIZATION STARTED ===
+2025-06-02 03:20:44 - System: DESKTOP-IA0L5FR
+2025-06-02 03:20:45 - OS: Microsoft Windows 10 Enterprise LTSC
+2025-06-02 03:20:47 - 
+=== DISABLING NON-ESSENTIAL SERVICES ===
+2025-06-02 03:20:48 - [STOPPED] OneSyncSvc_64bf9 (Sync Host_64bf9)
+2025-06-02 03:20:48 - [ERROR] Failed to process OneSyncSvc_64bf9: Service 'Sync Host_64bf9 (OneSyncSvc_64bf9)' cannot be configured due to the following error: The parameter is incorrect
+2025-06-02 03:20:48 - [ERROR] Failed to process TabletInputService: Service 'Touch Keyboard and Handwriting Panel Service (TabletInputService)' cannot be stopped due to the following error: Cannot stop TabletInputService service on computer '.'.
+2025-06-02 03:20:49 - [STOPPED] W3SVC (World Wide Web Publishing Service)
+2025-06-02 03:20:49 - [DISABLE] W3SVC → Disabled
+2025-06-02 03:20:52 - [STOPPED] WAS (Windows Process Activation Service)
+2025-06-02 03:20:52 - [DISABLE] WAS → Disabled
+2025-06-02 03:20:52 - [STOPPED] WdiServiceHost (Diagnostic Service Host)
+2025-06-02 03:20:52 - [DISABLE] WdiServiceHost → Disabled
+2025-06-02 03:20:53 - [STOPPED] WdiSystemHost (Diagnostic System Host)
+2025-06-02 03:20:53 - [DISABLE] WdiSystemHost → Disabled
+2025-06-02 03:20:53 - [STOPPED] TimeBrokerSvc (Time Broker)
+2025-06-02 03:20:53 - [ERROR] Failed to process TimeBrokerSvc: Service 'Time Broker (TimeBrokerSvc)' cannot be configured due to the following error: Access is denied
+2025-06-02 03:20:56 - [STOPPED] WpnUserService_64bf9 (Windows Push Notifications User Service_64bf9)
+2025-06-02 03:20:56 - [ERROR] Failed to process WpnUserService_64bf9: Service 'Windows Push Notifications User Service_64bf9 (WpnUserService_64bf9)' cannot be configured due to the following error: The parameter is incorrect
+2025-06-02 03:20:56 - 
+=== SETTING SERVICES TO MANUAL START ===
+2025-06-02 03:20:56 - [MANUAL] CyberGhost8Service → Manual
+2025-06-02 03:20:56 - [MANUAL] Spooler → Manual
+2025-06-02 03:20:56 - [MANUAL] WerSvc → Manual
+2025-06-02 03:21:02 - [STOPPED] DPS (Diagnostic Policy Service)
+2025-06-02 03:21:02 - [MANUAL] DPS → Manual
+2025-06-02 03:21:02 - [ERROR] Failed to process SecurityHealthService: Service 'Windows Security Service (SecurityHealthService)' cannot be stopped due to the following error: Cannot open SecurityHealthService service on computer '.'.
+2025-06-02 03:21:03 - [STOPPED] VaultSvc (Credential Manager)
+2025-06-02 03:21:03 - [MANUAL] VaultSvc → Manual
+2025-06-02 03:21:03 - [ERROR] Failed to process WinHttpAutoProxySvc: Service 'WinHTTP Web Proxy Auto-Discovery Service (WinHttpAutoProxySvc)' cannot be stopped due to the following error: Cannot open WinHttpAutoProxySvc service on computer '.'.
+2025-06-02 03:21:03 - [MANUAL] WAS → Manual
+2025-06-02 03:21:03 - 
+=== OPTIMIZATION COMPLETE ===
+2025-06-02 03:21:03 - Log saved to: .\log_final.txt
