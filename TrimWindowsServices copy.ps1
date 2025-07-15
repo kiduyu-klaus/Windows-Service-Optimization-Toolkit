@@ -1,14 +1,6 @@
 #Requires -RunAsAdministrator
 # Disables unnecessary services found in All_Services_List.txt
 
-# Set your folder path
-$logDir = "C:\cracks\Tricks\Windows-Service-Optimization-Toolkit-master\Logs"
-$logPath = "$logDir\service_disable_log.txt"
-
-# Make sure the Logs folder exists
-if (-not (Test-Path $logDir)) {
-    New-Item -ItemType Directory -Path $logDir -Force
-}
 $services = @(
     "AJRouter"
     "ALG"
@@ -67,22 +59,16 @@ $services = @(
     "XboxNetApiSvc"
 )
 
-
 foreach ($service in $services) {
     try {
         $svc = Get-Service -Name $service -ErrorAction Stop
-        $time = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-
         if ($svc.Status -ne 'Stopped') {
             Stop-Service -Name $service -Force -ErrorAction Stop
-            Write-Output "$time - Stopped $service" | Out-File -FilePath $logPath -Append
+            Write-Output "Stopped $service" | Out-File -FilePath ".\log.txt" -Append
         }
         Set-Service -Name $service -StartupType Disabled -ErrorAction Stop
-        Write-Output "$time - Disabled $service" | Out-File -FilePath $logPath -Append
+        Write-Output "Disabled $service" | Out-File -FilePath ".\log.txt" -Append
     } catch {
-        $time = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
-        Write-Output "$time - Service $service not found or could not be disabled." | Out-File -FilePath $logPath -Append
+        Write-Output "Service $service not found or could not be disabled." | Out-File -FilePath ".\log.txt" -Append
     }
 }
-
-Write-Output "✅ Service disabling complete. See $logPath for details."
